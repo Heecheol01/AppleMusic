@@ -5,4 +5,14 @@
 //  Created by 김희철 on 11/23/25.
 //
 
-import Foundation
+import UIKit
+
+class RadioController: UIViewController {
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+    }
+
+
+}
