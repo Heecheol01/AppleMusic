@@ -35,7 +35,7 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         Album(title: "Apartment", singer: "Karthegarden", image: UIImage(named: "Apartment.jpg")),
         Album(title: "I've Tried Everything But Therapy", singer: "Teddy Swims", image: UIImage(named: "LoseControl.jpg")),
         Album(title: "이상비행", singer: "Hanroro", image: UIImage(named: "Flight.jpg")),
-        Album(title: "자몽살구클럼", singer: "Hanroro", image: UIImage(named: "Jamong.jpg")),
+        Album(title: "자몽살구클럽", singer: "Hanroro", image: UIImage(named: "Jamong.jpg")),
         Album(title: "Harmony", singer: "Karthegarden", image: UIImage(named: "Harmony.jpg"))
     ]
     
