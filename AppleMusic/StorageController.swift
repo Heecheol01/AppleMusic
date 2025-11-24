@@ -7,7 +7,7 @@
 
 import UIKit
 
-class StorageController: UIViewController {
+class StorageController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
