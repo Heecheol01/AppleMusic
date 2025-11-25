@@ -7,11 +7,6 @@
 
 import UIKit
 
-struct Album {
-    let title: String
-    let singer: String
-    let image: UIImage?
-}
 
 class HomeViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
@@ -26,24 +21,13 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
     @IBOutlet var collectionView9: UICollectionView!
     @IBOutlet var collectionView10: UICollectionView!
     
-    // 각 컬렉션뷰마다 서로 다른 랜덤 6개를 유지
-    private var dataForCollection: [UICollectionView: [Album]] = [:]
-    
-    // 더미 데이터
-    private var albums: [Album] = [
-        Album(title: "Bad Dreams", singer: "Teddy Swims", image: UIImage(named: "BadDreams.jpg")),
-        Album(title: "Apartment", singer: "Karthegarden", image: UIImage(named: "Apartment.jpg")),
-        Album(title: "I've Tried Everything But Therapy", singer: "Teddy Swims", image: UIImage(named: "LoseControl.jpg")),
-        Album(title: "이상비행", singer: "Hanroro", image: UIImage(named: "Flight.jpg")),
-        Album(title: "자몽살구클럽", singer: "Hanroro", image: UIImage(named: "Jamong.jpg")),
-        Album(title: "Harmony", singer: "Karthegarden", image: UIImage(named: "Harmony.jpg"))
-    ]
+    private var dataForCollection: [UICollectionView: [DummyData.Album]] = [:]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        let all = albums
+        let all = DummyData.shared.getAlbums()
         let carousels: [UICollectionView?] = [collectionView1, collectionView2, collectionView3, collectionView4,
                                               collectionView5, collectionView6, collectionView7, collectionView8,
                                               collectionView9, collectionView10]
@@ -110,6 +94,8 @@ class HomeViewController: UIViewController, UICollectionViewDataSource, UICollec
         if let album = dataForCollection[collectionView]?[indexPath.item] {
             cell.imageView.image = album.image
             cell.titleLabel.text = album.title
+            cell.imageView.layer.cornerRadius = 10
+            cell.imageView.contentMode = .scaleToFill
         } else {
             cell.imageView.image = nil
             cell.titleLabel.text = nil

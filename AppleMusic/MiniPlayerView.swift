@@ -1,7 +1,7 @@
 import UIKit
 
 final class MiniPlayerView: UIControl {
-    private let blurView = UIVisualEffectView(effect: UIBlurEffect(style: .systemMaterial))
+    private let blurView = UIVisualEffectView(effect: UIBlurEffect(style: .systemThickMaterial))
     private let vibrancyView = UIVisualEffectView(effect: UIVibrancyEffect(blurEffect: UIBlurEffect(style: .systemMaterial)))
 
     private let artworkImageView = UIImageView()

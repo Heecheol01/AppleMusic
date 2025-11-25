@@ -182,16 +182,15 @@ class AlbumDetail: UITableViewController {
     }
     
     @objc private func handlePlayerStart() {
-        // 미니 플레이어 높이와 여백에 맞게 조정
         showMiniPlayer(in: tableListView, miniPlayerHeight: 64)
     }
 
     @objc private func handlePlayerStop() {
-        // 숨길 때는 복원(필요하면 복원 함수 따로 만들어 원래 값 저장/복구)
         tableListView.contentInset.bottom = 0
         tableListView.scrollIndicatorInsets.bottom = 0
     }
     
+    // ChatGPT
     private struct ITunesSearchResponse: Decodable {
         let resultCount: Int
         let results: [ITunesTrack]
