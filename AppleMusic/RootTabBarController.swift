@@ -39,7 +39,6 @@ final class RootTabBarController: UITabBarController {
     }
 
     @objc private func handlePause() {
-        // 일시정지는 표시 유지
         showMiniPlayer(animated: true)
     }
 
@@ -79,7 +78,6 @@ final class RootTabBarController: UITabBarController {
     }
 
     private func applyBottomInset(_ inset: CGFloat) {
-        // 현재 탭의 모든 VC에 동일한 bottom inset 적용 (스크롤 영역이 미니플레이어에 가리지 않도록)
         if let vcs = viewControllers {
             for vc in vcs {
                 vc.additionalSafeAreaInsets.bottom = inset

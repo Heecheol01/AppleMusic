@@ -1576,6 +1576,7 @@
                                                     </subviews>
                                                     <constraints>
                                                         <constraint firstItem="gby-mh-eQz" firstAttribute="width" secondItem="cYV-0n-NVG" secondAttribute="width" id="XDF-ns-PdS"/>
+                                                        <constraint firstItem="gby-mh-eQz" firstAttribute="width" secondItem="cYV-0n-NVG" secondAttribute="width" id="XzV-cy-ZMn"/>
                                                     </constraints>
                                                 </stackView>
                                             </subviews>
@@ -1679,6 +1680,7 @@
                                                         </label>
                                                     </subviews>
                                                     <constraints>
+                                                        <constraint firstItem="WQN-5S-fNp" firstAttribute="width" secondItem="bSa-di-YqG" secondAttribute="width" id="2cu-Sx-kJe"/>
                                                         <constraint firstItem="WQN-5S-fNp" firstAttribute="width" secondItem="bSa-di-YqG" secondAttribute="width" id="txY-z4-Mdi"/>
                                                     </constraints>
                                                 </stackView>
@@ -2563,7 +2565,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="xjJ-ll-oMs"/>
+        <segue reference="Zrq-6w-tN2"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Apartment.jpg" width="3000" height="3000"/>
